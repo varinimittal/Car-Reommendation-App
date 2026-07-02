@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "CarRecommendationApi.Controllers.RecommendationController",
+    "Method": "GetRecommendations",
+    "RelativePath": "api/Recommendation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CarRecommendationApi.Models.RecommendationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CarRecommendationApi.Models.CarRecommendation, CarRecommendationApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
