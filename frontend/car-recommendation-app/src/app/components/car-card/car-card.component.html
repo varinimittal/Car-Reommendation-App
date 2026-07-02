@@ -1,0 +1,23 @@
+<div class="car-card" [class.best-card]="isBest">
+  <div class="card-header">
+    <h2 class="car-name">{{ car.name }}</h2>
+    <span class="best-badge" *ngIf="isBest">&#9733; Best Choice</span>
+  </div>
+  <div class="car-details">
+    <div class="detail-row">
+      <span class="label">Price</span>
+      <span class="value">{{ car.price | currency }}</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">Mileage</span>
+      <span class="value">{{ car.mileage | number }} mpg</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">Safety Rating</span>
+      <span class="value rating">
+        <span *ngFor="let star of [1,2,3,4,5]" [class.filled]="star <= car.safetyRating">&#9733;</span>
+      </span>
+    </div>
+  </div>
+  <p class="reason">{{ car.recommendationReason }}</p>
+</div>

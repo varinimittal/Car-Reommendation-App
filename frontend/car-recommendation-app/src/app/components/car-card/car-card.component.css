@@ -1,0 +1,90 @@
+.car-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.car-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+  transform: translateY(-2px);
+}
+
+.car-card.best-card {
+  border: 2px solid #4a6cf7;
+  box-shadow: 0 4px 16px rgba(74, 108, 247, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.car-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #1a1a2e;
+  flex: 1;
+}
+
+.best-badge {
+  background: linear-gradient(135deg, #f5a623, #e8920d);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.label {
+  color: #666;
+  font-weight: 500;
+}
+
+.value {
+  color: #222;
+  font-weight: 600;
+}
+
+.rating span {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.rating span.filled {
+  color: #f5a623;
+}
+
+.reason {
+  font-size: 0.88rem;
+  color: #555;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 0.75rem;
+  margin: 0;
+  line-height: 1.5;
+  font-style: italic;
+}
