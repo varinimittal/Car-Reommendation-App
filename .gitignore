@@ -1,0 +1,9 @@
+# .NET build outputs
+**/bin/
+**/obj/
+**/.vs/
+
+# Node/Angular dependencies and build outputs
+**/node_modules/
+**/.angular/
+**/dist/
